@@ -10,6 +10,12 @@ security:
             anonymous: lazy
             provider: users_in_memory
 
+        api:
+            pattern:  ^/api
+            stateless: true
+            anonymous: true
+
+
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 
